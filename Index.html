@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prenotazioni Spiaggia</title>
@@ -16,18 +17,273 @@
 
 </head>
 
+
 <body>
 
 
-    
+<!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-sun-fill me-2"></i> Spiaggia Azzurra
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#servizi">Servizi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#prenota">Prenota</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galleria">Galleria</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Header Section -->
+
+    <header class="hero-section py-5">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7 text-white">
+                    <p class="badge rounded-pill bg-white text-primary mb-3 px-3 py-2">Estate 2026</p>
+                    <h1 class="display-4 fw-bold mb-3">Prenota il tuo angolo di relax sulla spiaggia</h1>
+                    <p class="lead mb-4">Ombrelloni premium, servizio bar, lettini confortevoli e un panorama mozzafiato: tutto a portata di click.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#prenota" class="btn btn-light btn-lg px-4">Prenota ora</a>
+                        <a href="#servizi" class="btn btn-outline-light btn-lg px-4">Scopri i servizi</a>
+                    </div>
+                    <div class="row mt-4 g-3">
+                        <div class="col-sm-4">
+                            <div class="bg-white bg-opacity-10 rounded p-3">
+                                <h3 class="h5 mb-1">4.9/5</h3>
+                                <small>Valutazione ospiti</small>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="bg-white bg-opacity-10 rounded p-3">
+                                <h3 class="h5 mb-1">20+</h3>
+                                <small>Postazioni premium</small>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="bg-white bg-opacity-10 rounded p-3">
+                                <h3 class="h5 mb-1">24/7</h3>
+                                <small>Assistenza clienti</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card shadow-lg border-0 rounded-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Spiaggia con ombrelloni e mare">
+                        <div class="card-body p-4">
+                            <h2 class="h4 mb-3">La tua vacanza inizia qui</h2>
+                            <p class="text-muted">Scegli la zona preferita, seleziona la data e lascia il resto a noi.</p>
+                            <ul class="list-unstyled small text-muted">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Wi-Fi gratuito</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Servizio concierge</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Animazione per bambini</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="servizi" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <p class="text-primary fw-semibold">Esperienza completa</p>
+                <h2 class="display-6 fw-bold">Tutto ciò che serve per una giornata perfetta</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="icon-box mb-3"><i class="bi bi-umbrella-fill"></i></div>
+                        <h3 class="h5">Ombrelloni premium</h3>
+                        <p class="text-muted">Postazioni eleganti con sedie comode e ombra garantita tutta la giornata.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="icon-box mb-3"><i class="bi bi-cup-straw"></i></div>
+                        <h3 class="h5">Bar e ristorante</h3>
+                        <p class="text-muted">Cocktail, aperitivi e cucina locale serviti direttamente sulla spiaggia.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="icon-box mb-3"><i class="bi bi-water"></i></div>
+                        <h3 class="h5">Attività marine</h3>
+                        <p class="text-muted">Gite in barca, snorkeling e sport acquatici per tutta la famiglia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prenota" class="py-5">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <p class="text-primary fw-semibold">Prenotazione semplice</p>
+                    <h2 class="display-6 fw-bold mb-3">Richiedi subito la tua postazione</h2>
+                    <p class="text-muted">Compila il modulo e ti ricontatteremo entro pochi minuti con disponibilità e dettagli.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card shadow border-0 rounded-4 p-4">
+                        <form id="bookingForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Nome</label>
+                                    <input type="text" class="form-control" placeholder="Il tuo nome" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" placeholder="la-tua@email.com" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Data</label>
+                                    <input type="date" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Persone</label>
+                                    <select class="form-select" required>
+                                        <option value="">Seleziona</option>
+                                        <option>2 persone</option>
+                                        <option>4 persone</option>
+                                        <option>6 persone</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Zona preferita</label>
+                                    <select class="form-select" required>
+                                        <option value="">Scegli una zona</option>
+                                        <option>Zona Sole</option>
+                                        <option>Zona Ombra</option>
+                                        <option>Zona Family</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary w-100">Invia richiesta</button>
+                                </div>
+                            </div>
+                            <div id="formMessage" class="alert alert-success mt-3 d-none" role="status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galleria" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <p class="text-primary fw-semibold">Momenti da ricordare</p>
+                <h2 class="display-6 fw-bold">Un luogo perfetto per rilassarsi</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-4 shadow-sm" alt="Spiaggia e tramonto">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-4 shadow-sm" alt="Lettini sulla spiaggia">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-4 shadow-sm" alt="Mare cristallino">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prezzi" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <p class="text-primary fw-semibold">Prezzi e pacchetti</p>
+                <h2 class="display-6 fw-bold">Scegli il pacchetto che fa per te</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 p-4">
+                        <h3 class="h5">Pacchetto Relax</h3>
+                        <p class="text-muted">Per una giornata tranquilla in spiaggia.</p>
+                        <div class="display-6 fw-bold text-primary">€25</div>
+                        <ul class="list-unstyled mt-3 text-muted">
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>2 lettini</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Ombrellone</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Wi-Fi gratuito</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 p-4">
+                        <h3 class="h5">Pacchetto Family</h3>
+                        <p class="text-muted">Ideale per famiglie e gruppi.</p>
+                        <div class="display-6 fw-bold text-primary">€45</div>
+                        <ul class="list-unstyled mt-3 text-muted">
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>4 posti a sedere</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Area bambini</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Bar inclusi</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 p-4">
+                        <h3 class="h5">Pacchetto VIP</h3>
+                        <p class="text-muted">Esperienza esclusiva e massima comodità.</p>
+                        <div class="display-6 fw-bold text-primary">€80</div>
+                        <ul class="list-unstyled mt-3 text-muted">
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Postazione premium</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Servizio concierge</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Snack e bevande</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contatti" class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <p class="text-primary fw-semibold">Contatti e riferimenti</p>
+                    <h2 class="display-6 fw-bold mb-3">Trovaci facilmente</h2>
+                    <p class="text-muted">Siamo a pochi passi dal mare e siamo sempre disponibili per informazioni, prenotazioni e assistenza.</p>
+                    <ul class="list-unstyled mt-4">
+                        <li class="mb-3"><i class="bi bi-geo-alt-fill text-primary me-2"></i>Via del Mare 24, 00100 Spiaggia Azzurra</li>
+                        <li class="mb-3"><i class="bi bi-telephone-fill text-primary me-2"></i>+39 0123 456789</li>
+                        <li class="mb-3"><i class="bi bi-envelope-fill text-primary me-2"></i>info@spiaggiaazzurra.it</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 p-4">
+                        <div class="ratio ratio-16x9 rounded overflow-hidden">
+                            <iframe src="https://www.google.com/maps?q=Spiaggia%20Azzurra&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mappa della spiaggia"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer class="py-4 bg-primary text-white">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <span>© <span id="year"></span> Spiaggia Azzurra. Tutti i diritti riservati.</span>
+            <span><i class="bi bi-telephone me-2"></i>+39 0123 456789</span>
+        </div>
+    </footer>
 
 
 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
 </body>
