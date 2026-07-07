@@ -1,12 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
+
     const yearElement = document.getElementById('year');
+    const form = document.getElementById('bookingForm');
+    const message = document.getElementById('formMessage');
+    const navbar = document.querySelector('.navbar');
+    let lastScroll = window.scrollY;
+
+
+    // Update the year in the footer
     if (yearElement) {
         yearElement.textContent = new Date().getFullYear();
     }
 
-    const form = document.getElementById('bookingForm');
-    const message = document.getElementById('formMessage');
-
+    // Form submission handling
     if (form && message) {
         form.addEventListener('submit', (event) => {
             event.preventDefault();
@@ -16,4 +22,18 @@ document.addEventListener('DOMContentLoaded', () => {
             form.reset();
         });
     }
+
+    // Navbar hide on scroll
+    if (navbar) {
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.scrollY;
+            if (currentScroll > lastScroll && currentScroll > 120) {
+                navbar.classList.add('navbar-hidden');
+            } else {
+                navbar.classList.remove('navbar-hidden');
+            }
+            lastScroll = currentScroll;
+        });
+    }
+
 });

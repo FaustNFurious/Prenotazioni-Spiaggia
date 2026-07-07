@@ -94,6 +94,7 @@
         </div>
     </header>
 
+    <!-- Services Section -->
     <section id="servizi" class="py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5">
@@ -126,6 +127,7 @@
         </div>
     </section>
 
+    <!-- Booking Section -->
     <section id="prenota" class="py-5">
         <div class="container">
             <div class="row g-4 align-items-center">
@@ -180,6 +182,7 @@
         </div>
     </section>
 
+    <!-- Gallery Section -->
     <section id="galleria" class="py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5">
@@ -200,6 +203,7 @@
         </div>
     </section>
 
+    <!-- Pricing Section -->
     <section id="prezzi" class="py-5">
         <div class="container">
             <div class="text-center mb-5">
@@ -247,6 +251,7 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contatti" class="py-5 bg-light">
         <div class="container">
             <div class="row g-4 align-items-center">
@@ -273,10 +278,57 @@
 
     <!-- Footer Section -->
 
-    <footer class="py-4 bg-primary text-white">
-        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-            <span>© <span id="year"></span> Spiaggia Azzurra. Tutti i diritti riservati.</span>
-            <span><i class="bi bi-telephone me-2"></i>+39 0123 456789</span>
+    <footer class="footer-section py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-3">
+                    <h3 class="footer-heading">Spiaggia Azzurra</h3>
+                    <p class="footer-note">Ombrelloni premium, servizio bar e vacanze indimenticabili. Prenota la tua giornata perfetta con noi.</p>
+                    <a href="#contatti" class="btn btn-light btn-sm rounded-pill">Contattaci ora</a>
+                </div>
+                <div class="col-lg-3">
+                    <h3 class="footer-heading">Link utili</h3>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="#servizi">Servizi</a></li>
+                        <li><a href="#prenota">Prenota</a></li>
+                        <li><a href="#galleria">Galleria</a></li>
+                        <li><a href="#contatti">Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h3 class="footer-heading">Contatti</h3>
+                    <ul class="list-unstyled footer-contact">
+                        <li><i class="bi bi-geo-alt-fill me-2"></i>Via del Mare 24, 00100 Spiaggia Azzurra</li>
+                        <li><i class="bi bi-telephone-fill me-2"></i>+39 0123 456789</li>
+                        <li><i class="bi bi-envelope-fill me-2"></i>info@spiaggiaazzurra.it</li>
+                    </ul>
+                    <div class="footer-hours mt-3">
+                        <strong>Orari</strong>
+                        <p class="mb-1">Lun-Ven: 08:00 - 20:00</p>
+                        <p>Sab-Dom: 09:00 - 19:00</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h3 class="footer-heading">Newsletter</h3>
+                    <p class="footer-note">Iscriviti per offerte esclusive e aggiornamenti sulla spiaggia.</p>
+                    <form class="footer-newsletter d-flex flex-column gap-2" onsubmit="return false;">
+                        <input type="email" class="form-control form-control-sm" placeholder="La tua email" required>
+                        <button type="submit" class="btn btn-light btn-sm rounded-pill">Iscriviti</button>
+                    </form>
+                    <div class="footer-social mt-4">
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#" aria-label="Email"><i class="bi bi-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom mt-4 pt-4 border-top border-white border-opacity-10 text-center text-md-start">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                    <span>© <span id="year"></span> Spiaggia Azzurra. Tutti i diritti riservati.</span>
+                    <span><i class="bi bi-bookmark-fill me-2"></i>Più di 20 postazioni premium</span>
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -284,9 +336,9 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./Main.js"></script>
 
 
 </body>
-
 
 </html>

@@ -17,6 +17,11 @@
     --btn-shadow: 0 8px 20px rgba(15, 111, 168, 0.22);
     --hero-start: rgba(4, 34, 51, 0.95);
     --hero-end: rgba(15, 111, 168, 0.8);
+    --footer-start: rgba(3, 68, 116, 0.95);
+    --footer-end: rgba(15, 111, 168, 1);
+    --footer-text: rgba(255, 255, 255, 0.95);
+    --footer-muted: rgba(255, 255, 255, 0.85);
+    --footer-muted-strong: rgba(255, 255, 255, 0.78);
 }
 
 * {
@@ -32,6 +37,10 @@ body {
     overflow-x: hidden;
 }
 
+body {
+    padding-top: 4rem;
+}
+
 /* Stili generali */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -44,8 +53,18 @@ body {
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
     padding-top: 0.9rem;
     padding-bottom: 0.9rem;
+    transition: transform 0.25s ease, box-shadow 0.2s ease;
+}
+
+.navbar-hidden {
+    transform: translateY(-120%);
 }
 
 .navbar-nav .nav-link {
@@ -57,8 +76,8 @@ body {
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus {
     background-color: var(--grey-light);
-    color: var(--white);
-    transform: translateY(-1px);
+    color: var(--surface);
+    transform: translateY(-5px);
 }
 
 .hero-section {
@@ -100,7 +119,7 @@ section {
 }
 
 .btn:hover {
-    transform: translateY(-1px);
+    transform: translateY(-5px);
 }
 
 .btn-primary {
@@ -114,6 +133,70 @@ section {
     border-radius: 0.9rem;
     border: 1px solid var(--border-soft);
     padding: 0.7rem 0.85rem;
+}
+
+.footer-section {
+    background: linear-gradient(180deg, var(--footer-start), var(--footer-end));
+}
+
+.footer-heading {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.footer-note {
+    color: var(--footer-muted);
+    line-height: 1.7;
+}
+
+.footer-links li,
+.footer-contact li {
+    margin-bottom: 0.9rem;
+}
+
+.footer-links a {
+    color: var(--footer-text);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--surface);
+}
+
+.footer-contact {
+    color: var(--footer-text);
+}
+
+.footer-hours {
+    color: var(--footer-muted);
+}
+
+.footer-newsletter .form-control {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.footer-newsletter .btn {
+    align-self: flex-start;
+}
+
+.footer-social {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.footer-social a {
+    color: var(--footer-text);
+    font-size: 1.2rem;
+    transition: color 0.2s ease;
+}
+
+.footer-social a:hover {
+    color: var(--secondary);
+}
+
+.footer-bottom {
+    color: var(--footer-muted-strong);
 }
 
 .img-fluid {
