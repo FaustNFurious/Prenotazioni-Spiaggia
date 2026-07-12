@@ -37,12 +37,9 @@ body {
     overflow-x: hidden;
 }
 
-body {
-    padding-top: 4rem;
-}
-
 /* Stili generali */
 body {
+    padding-top: 4rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--dark);
     background: linear-gradient(180deg, var(--surface-soft) 0%, var(--surface-muted) 100%);
